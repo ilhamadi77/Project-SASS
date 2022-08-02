@@ -1,0 +1,70 @@
+/*
+mixin kumpulan style yang dapat digunakan berulang-ulang (function)
+
+keyword 
+@mixin => ketika membuat mixin nya
+@include => ketika kita memanggil mixinya
+
+
+ */
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header ul li {
+  display: inline-block;
+}
+.header ul li {
+  background-color: black;
+  padding: 0.7em;
+}
+.header ul li:hover {
+  background-color: green;
+}
+.header ul li a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer ul li {
+  display: inline-block;
+}
+.footer ul li {
+  background-color: salmon;
+  padding: 0.4em;
+  border-radius: 20px;
+}
+.footer ul li:hover {
+  background-color: #000;
+}
+.footer ul li a {
+  color: #fefefe;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  background-color: green;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 600px;
+  height: 400px;
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+}
+.container .box {
+  height: 60px;
+  width: 60px;
+  background-color: #888888;
+  text-align: center;
+  line-height: 60px;
+}/*# sourceMappingURL=main.css.map */

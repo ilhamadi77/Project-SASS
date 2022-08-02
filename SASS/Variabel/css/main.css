@@ -1,0 +1,26 @@
+/* 
+prilaku variabel sass 
+ 1. sass mengaggap - dan _ itu sama sebagai pemisah kata
+ 2. variabel sass juga memiliki scope terdiri dari global scope dan local scope
+ 3. cara mengubah variable local mejadi variabel global menggunakan !global
+*/
+/*
+:root{
+  --primary-color: yellow;
+  --text-color: salmon;
+}
+
+.container {
+  background-color: var(--text-color);
+}
+ul li {
+  color: var(--primary-color);
+}
+*/
+h1 {
+  color: yellow;
+}
+
+body {
+  background-color: #ddd;
+}/*# sourceMappingURL=main.css.map */

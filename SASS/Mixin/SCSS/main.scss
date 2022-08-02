@@ -1,0 +1,79 @@
+//Mixin
+/*
+mixin kumpulan style yang dapat digunakan berulang-ulang (function)
+
+keyword 
+@mixin => ketika membuat mixin nya
+@include => ketika kita memanggil mixinya
+
+
+ */
+
+ @mixin inline-block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    display: inline-block;
+  }
+ }
+
+ .header ul{
+    @include inline-block();
+    
+    li{
+      background-color: black;
+      padding: 0.7em;
+      &:hover{
+        background-color: green;
+      }
+      a{
+        color: yellow;
+        text-decoration: none;
+      }
+    }
+ }
+
+ .footer ul{
+  @include inline-block();
+  li{
+    background-color: salmon;
+    padding: 0.4em;
+    border-radius: 20px;
+    &:hover{
+      background-color: #000;
+    }
+
+    a{
+      &:hover{
+        background-color: green;
+      }
+      color: #fefefe;
+      text-decoration: none;
+    }
+  }
+ }
+
+
+ //argumen pada mixin
+@mixin flex-box($direction: row,$space: center){
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+ .container{
+  @include flex-box(row-reverse,space-between);
+  width: 600px;
+  height: 400px;
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+  .box{
+    height: 60px;
+    width: 60px;
+    background-color: #888888;
+    text-align: center;
+    line-height: 60px;
+  }
+ }
