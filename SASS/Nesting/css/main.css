@@ -1,0 +1,34 @@
+/* 1. Nesting bisa menyimpam selector css didalam selector yang lain
+   2. mendaftarkan selector
+   3. parent selector (&) kita dapat mentarget element parent pada saat nesting
+    -parent selector dapat menambahkan sudo class( hover,active,link,insited)
+    -generate otomatis nama dari parent
+
+    */
+/*
+.main, footer{
+  h1, p{
+    background-color: yellow;
+    letter-spacing: 5px;
+  }
+}
+*/
+.main .main-heading {
+  background-color: yellow;
+  color: blue;
+  font-size: 2em;
+}
+.main .main-paragraph {
+  font-size: 1.4em;
+  background-color: lightblue;
+}
+
+.footer .footer-heading {
+  background-color: yellow;
+  color: blue;
+  font-size: 2em;
+}
+.footer .footer-paragraph {
+  font-size: 1em;
+  background-color: lightblue;
+}/*# sourceMappingURL=main.css.map */
