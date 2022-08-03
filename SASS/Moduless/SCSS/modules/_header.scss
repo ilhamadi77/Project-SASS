@@ -1,0 +1,17 @@
+@use 'mixin';
+
+.header ul{
+  @include mixin.inline-block();
+  
+  li{
+    background-color: black;
+    padding: 0.7em;
+    &:hover{
+      background-color: green;
+    }
+    a{
+      color: yellow;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+//Modulus SASS
+
+/* 
+@import dan @use
+ penamaan file harus menggunakan underscore(_) sebagai menandakan
+ partial dari modules dan tidak melawati komperasi ke css
+
+ memudahkan untuk membuat style dengan bagian2 tertentu sehingga
+ memudahkan dalam melakukan stylean
+
+ ada apa dengan @import?
+membuat semua variable mixin dapat dipanggil secara global yang berdampak bentrok dengan variabel lain atau framework lain
+akan susah dalam melakukan pewarisan
+waktu proses akan lebih lama ketika menggunakan @import
+
+
+ada apa dengan @use?
+@use hanya digunakan dart sass 
+
+catatan :
+ketika menemukan file name yang begitu panjang makan disarankan untuk
+menggunakan alias (as) untuk memudahkan dalam pengkodingan
+
+
+*/
+
+/*
+@import 'modules/mixin';
+@import 'modules/header';
+@import 'modules/container';
+@import 'modules/footer';
+  */
+ //option @import
+ // @import 'modules/mixin','modules/header','modules/container','modules/footer';
+ 
+
+@use 'modules/header';
+@use 'modules/container';
+@use 'modules/footer';

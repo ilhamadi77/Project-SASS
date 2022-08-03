@@ -1,0 +1,21 @@
+@use 'mixin';
+
+.footer ul{
+  @include mixin.inline-block();
+  li{
+    background-color: salmon;
+    padding: 0.4em;
+    border-radius: 20px;
+    &:hover{
+      background-color: #000;
+    }
+
+    a{
+      &:hover{
+        background-color: green;
+      }
+      color: #fefefe;
+      text-decoration: none;
+    }
+  }
+ }
