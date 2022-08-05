@@ -1,0 +1,126 @@
+/*
+flow control
+
+index itu dimulai dari 0 sedangkan css element dimulai dari 1
+sass mempunyai function untuk mengelola warna lighten dan darken
+
+*/
+/*
+@mixin color-mode($light-mode:false){
+
+  @if $light-mode{
+    background-color: $light-bg;
+    color: $light-text;
+  } @else{
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+}
+
+body{
+  @include color-mode($light-mode:false);
+  min-height: 1000px;
+}
+*/
+.square-profile {
+  width: 200px;
+  height: 200px;
+  border: 5px solid yellow;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.circle-profile {
+  width: 80px;
+  height: 80px;
+  border: 5px solid yellow;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-width: 2em;
+  border-style: solid;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: black;
+}
+
+/*
+$color: yellow;
+.gradient{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @for $i from 1 to 11 {
+    li:nth-child(){
+      padding: 5px;
+      background-color: lighten($color,$i *5% );
+    }
+  }
+}
+*/
+.gradient {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gradient li:nth-child(1) {
+  padding: 4px;
+  background-color: #f0f000;
+}
+.gradient li:nth-child(2) {
+  padding: 4px;
+  background-color: #e0e000;
+}
+.gradient li:nth-child(3) {
+  padding: 4px;
+  background-color: #d1d100;
+}
+.gradient li:nth-child(4) {
+  padding: 4px;
+  background-color: #c2c200;
+}
+.gradient li:nth-child(5) {
+  padding: 4px;
+  background-color: #b3b300;
+}
+.gradient li:nth-child(6) {
+  padding: 4px;
+  background-color: #a3a300;
+}
+.gradient li:nth-child(7) {
+  padding: 4px;
+  background-color: #949400;
+}
+.gradient li:nth-child(8) {
+  padding: 4px;
+  background-color: #858500;
+}
+.gradient li:nth-child(9) {
+  padding: 4px;
+  background-color: #757500;
+}
+.gradient li:nth-child(10) {
+  padding: 4px;
+  background-color: #666600;
+}
+
+.social-media {
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.social-media .youtube {
+  color: red;
+}
+.social-media .twitter {
+  color: aqua;
+}
+.social-media .facebook {
+  color: blue;
+}
+.social-media .tele {
+  color: salmon;
+}/*# sourceMappingURL=main.css.map */
