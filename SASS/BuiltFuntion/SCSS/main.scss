@@ -1,0 +1,33 @@
+//Built in Function /Modules
+/* 
+built in function adalah fungsi bawaan yang dimiliki suatu bahasa pemograman
+color, list, Map, Meta, Math, Selector, String
+
+//Built in Modules:Color
+ adjust-color($color,$red:null,$green:null,$blue:null,$hue:null,$saturation:null,$lightness:null, $whiteness:null,
+  blackness:null,$alpha:null) *
+
+*Color*
+adjust-hue -> weana yang terletak di roda warna yang di ubah posisinya dengan menggunakan derajat, apabila derjat positif makan akan keatas dan bila derajat negatif akan kebawah , adjust-hue($color,$degree).
+complement-> untuk mendapatkan warna yang bersebrangan dengan warna sebelumnya , complement($color) 180deg.
+darken -> warna yang tetap di garis roda warna yang mejauhi roda warna(gelap) , darken($color, $amount).
+lighten -> warna yang mendekati roda warna (lebih putih) , lighten($color, $amount).
+ saturate->tingkat kemurnian suatu warna nambahin warna, staurate($color,$amount).
+ desaturate->tingkat kemurnian suatu warna ngurangin warna, staurate($color,$amount).
+ grayscale-> membuat desaturate mejadi 100% , grayscale($color)
+ mix-> mencampurkan dua buah warna , mix($color1,$color2, $weight:50%).
+ fade-in-> membuat transparasi mejadi solid , fade-in($color,$amount(0-1)).
+ fade-out-> membuat solid mejadi transparasi , fade-in($color,$amount).
+
+
+*/
+
+//Base 
+$warna-dasar:salmon;
+h1{
+  color: $warna-dasar;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+  text-align: center;
+}  
+
